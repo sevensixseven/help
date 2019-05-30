@@ -79,7 +79,7 @@ By default the Directory Connector communicates with the Bitwarden public cloud 
 1. Run the Directory Connector application.
 2. If you are already logged into the application, go to the **More** tab and **Log Out**.
 3. On the main log in screen, select the **Settings** button.
-4. Enter your installation's base URL and save. For example, `https://bitwarden.company.com`.
+4. Enter your installation's base URL and save. For example, `https://bitwarden.example.com`.
 
 ## Log in to your Bitwarden organization account
 
@@ -162,6 +162,10 @@ See the [download and install](#download-and-install) section above for links to
 
 {% note %}
 When extracting the zip, make sure that the included `keytar.node` dependency remains in the same directory as the main `bwdc` executable.
+
+Linux users must have `libsecret` installed, which is usually already available on most systems. Example:
+
+    apt-get install libsecret-1-0
 {% endnote %}
 
 ### Shared Data
@@ -220,7 +224,7 @@ The `config` command allow you to specify settings for the Directory Connector C
 
 For example, if you are using a self hosted Bitwarden server you will need to change the endpoint that the Directory Connector CLI communicates with.
 
-    bwdc config server https://bitwarden.company.com
+    bwdc config server https://bitwarden.example.com
 
 You can also use the `config` command to set parameters that require secure storage and cannot be modified directly in the `data.json` database file, such as passwords or access tokens.
 
