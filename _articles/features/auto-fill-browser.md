@@ -34,8 +34,6 @@ You can use a set of keyboard shortcuts (hot keys) to quickly auto-fill a login 
 - Linux: `Ctrl + Shift + L`
 - macOS: `Cmd + Shift + L`
   - Safari: `Cmd + \`
-  
-{% note %}If a shortcut does not work, it may be because another application on your device is already using it. For example, the auto-fill shortcut on Windows is commonly claimed by the AMD Radeon Adrenaline software (AMD graphic drivers) and therefore cannot be used by Bitwarden. You can free up this shortcut by changing it in the AMD Radeon software under Gaming &rarr; Global Settings &rarr; Performance Monitoring: "Toggle Performance Logging Hotkey".{% endnote %}
 
 Another option is to open the popup window using the keyboard shortcut (see below). You can then `TAB` to the login that you would like to auto-fill and then press `ENTER` to select.
 
